@@ -116,7 +116,7 @@ namespace ADPRestSharp.Controllers
 
             byte[] rawData = BearerToken.ReadFile(certFile);
 
-            X509Certificate2 certificate = new X509Certificate2(rawData, "adpadp10");
+            X509Certificate2 certificate = new X509Certificate2(rawData, "YOUR CERT PASSWORD");
 
             client.ClientCertificates = new X509CertificateCollection() { certificate };
 
